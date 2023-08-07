@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "$PYCODE" > run_inline.py
+python3 run_inline.py
+rm run_inline.py
