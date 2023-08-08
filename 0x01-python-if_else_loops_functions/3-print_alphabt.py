@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 for num in range(97, 123):
-    if num != 101 or num != 113:
-        print("%c"%(num),end="")
-print()
+    if num != 101 and num != 113:
+        print("{:c}".format(num),end="")
