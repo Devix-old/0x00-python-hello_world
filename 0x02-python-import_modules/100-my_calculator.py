@@ -9,12 +9,13 @@ if __name__ == "__main__":
     a, operator, b = int(sys.argv[1]), sys.argv[2], int(sys.argv[3])
     match operator:
         case '-':
-            print("{}".format(sub(a, b)))
+            print("{} - {} = {}".format(a, b, sub(a, b)))
         case '+':
-            print("{}".format(add(a, b)))
+            print("{} + {} = {}".format(a, b, add(a, b)))
         case '*':
-            print("{}".format(mul(a, b)))
+            print("{} * {} = {}".format(a, b, mul(a, b)))
         case '/':
-            print("{}".format(div(a, b)))
+            print("{} / {} = {}".format(a, b, div(a, b)))
         case _:
             print("Unknown operator. Available operators: +, -, * and /")
+            exit(1)
