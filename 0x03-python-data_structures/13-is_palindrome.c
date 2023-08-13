@@ -29,6 +29,8 @@ int is_palindrome(listint_t **head)
 	listint_t *temp = *head;
 	int half_len = len / 2;
 
+	if (*head == NULL || (*head)->next == NULL)
+		return (1);
 	while (len > half_len)
 	{
 		i = len;
