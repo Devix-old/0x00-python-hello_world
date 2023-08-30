@@ -27,11 +27,14 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    @property
     def position(self):
         """return the current position"""
         return self.__position
 
+    @position.setter
     def position(self, value):
+        """set the position"""
         if (not isinstance(value, tuple) or
             not all(isinstance(num, int) for num in value) or
             len(value) != 2 or
