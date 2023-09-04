@@ -78,4 +78,4 @@ class Rectangle:
         """print the rectangle"""
         if self.height == 0 or self.width == 0:
             return ""
-        return (("#" * (self.width) + "\n") * self.height)[:-1	]
+        return (("#" * (self.width) + "\n") * self.height)[:-1]
