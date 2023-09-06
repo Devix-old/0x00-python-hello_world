@@ -1,0 +1,58 @@
+# This file is to test text_indentation function !
+
+# let's start by importing the module
+
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+#Case 1: Everything ok !
+
+>>> text_indentation("Hello World. My named is Mohamed.")
+Hello World.
+<BLANKLINE>
+My named is Mohamed.
+<BLANKLINE>
+
+#Case 2: Passing non string argument !
+
+>>> text_indentation(123456)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+
+#Case 3: Passing None argument !
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+
+#Case 4: Passing without args !
+
+>>> text_indentation()
+Traceback (most recent call last):
+        ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+#Case 5: Passing more then 1 argument
+>>> text_indentation("Hi", "My name is mohamed")
+Traceback (most recent call last):
+        ...
+TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+#case 6: Passing 1 word !
+
+>>> text_indentation("Hello!")
+Hello!
+
+#case 6: Passing text with spaces in the start and the end
+
+>>> text_indentation("   Hello World!  ")
+Hello World!
+
+#case 7 : Passing text with new lines inside and in the end !
+
+>>> text_indentation("   My name is : \n Mohamed\n  ")
+My name is :
+<BLANKLINE>
+<BLANKLINE>
+Mohamed
