@@ -12,9 +12,11 @@ def text_indentation(text):
     for i in range(len(text)):
         if text[i] == ' ' and text[i - 1] in characters:
             continue
-        if text[i] in characters:
-            new_text += text[i] + '\n\n'
-
+        try:
+            if text[i] in characters and (text[i + 1] == ' ' or text[i + 1] == '\n'):
+                new_text += text[i] + '\n\n'
+        except IndexError:
+            pass
         else:
             new_text += text[i]
 
