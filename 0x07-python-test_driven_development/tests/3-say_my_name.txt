@@ -1,0 +1,46 @@
+# This file for test say_my_name function !
+===========================================
+# Prototype: def say_my_name(first_name, last_name=""):
+# first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string
+# Lets import the function :
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+==============================================================================================================================
+
+#case 1: Everythig good
+
+>>> say_my_name("Mohamed", "El Gharef")
+My name is Mohamed El Gharef
+
+#case 2:  first_name is not string
+
+>>> say_my_name(123, "El Gharef")
+Traceback (most recent call last):
+	...
+TypeError: first_name must be a string
+
+#case 3: last name is empty
+
+>>> say_my_name("Mohamed")
+My name is Mohamed
+
+case 4: last name is not string
+
+>>> say_my_name("Mohamed", 123)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
+
+case 5: last name set to None
+
+>>> say_my_name("Mohamed", None)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
+
+case 6: Function without argument
+
+>>> say_my_name()
+Traceback (most recent call last):
+	...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
