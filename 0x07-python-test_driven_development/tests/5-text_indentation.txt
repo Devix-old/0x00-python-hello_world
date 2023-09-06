@@ -56,3 +56,12 @@ My name is :
 <BLANKLINE>
 <BLANKLINE>
 Mohamed
+
+# Case 8 (Rewritten): Text with a mix of special characters and alphanumeric characters
+
+>>> text_indentation("I have $10.50. Coffee is $2.50. Total: $13.00.")
+I have $10.50.
+<BLANKLINE>
+Coffee is $2.50.
+<BLANKLINE>
+Total: $13.00

@@ -8,7 +8,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     characters = ['.', '?', ':']
     new_text = ""
-	
+
     for i in range(len(text)):
         if text[i] == ' ' and text[i - 1] in characters:
             continue
@@ -17,10 +17,10 @@ def text_indentation(text):
 
         else:
             new_text += text[i]
-    
+
     lines = new_text.split("\n")
     for i in range(len(lines)):
         lines[i] = lines[i].strip()
-    
+
     new_text = '\n'.join(lines)
-    print(new_text,end="")
+    print(new_text, end="")
