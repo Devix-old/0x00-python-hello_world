@@ -35,4 +35,15 @@ Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
-#case 8: 
+# case 8: Missing 2 arguments
+ >>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+
+# Case 9: Add NaN (ValueError should be raised)
+>>> add_integer(1, float('nan'))
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
+
