@@ -22,7 +22,7 @@ TypeError: first_name must be a string
 #case 3: last name is empty
 
 >>> say_my_name("Mohamed")
-My name is Mohamed
+My name is Mohamed 
 
 case 4: last name is not string
 
