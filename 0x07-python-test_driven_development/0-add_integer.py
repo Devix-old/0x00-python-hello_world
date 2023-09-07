@@ -2,7 +2,7 @@
 """This module define a function that return the sum of two numbers"""
 
 
-def add_integer(a, b=98):
+def add_integer(a, b):
     """
     Add two numbers
     Parametres:
