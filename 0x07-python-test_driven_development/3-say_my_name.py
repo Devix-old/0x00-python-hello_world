@@ -6,11 +6,13 @@ This module defines a function to print a person's name.
 
 def say_my_name(first_name, last_name=""):
     """
-    Print a person's name based on their first name and optionally their last name.
+    Print a person's name based on their first name and
+    optionally their last name.
 
     Parameters:
     first_name (str): The person's first name.
-    last_name (str, optional): The person's last name. Default is an empty string.
+    last_name (str, optional): The person's last
+    name. Default is an empty string.
 
     Returns:
     None

@@ -42,3 +42,19 @@ Traceback (most recent call last):
 	...
 ZeroDivisionError: division by zero
 
+# Case 6: Division by positive infinity
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+# Case 7: Missing one argument
+>>> matrix_divided(matrix)
+Traceback (most recent call last):
+	...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+# Case 8: Missing two argument
+>>> matrix_divided()
+Traceback (most recent call last):
+	...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
