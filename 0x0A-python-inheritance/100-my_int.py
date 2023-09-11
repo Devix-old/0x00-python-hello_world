@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines the MyInt class, which is a custom integer class that inverts the behavior
-of the == and != operators when comparing MyInt objects with other objects.
+This module defines the MyInt class
 """
 
 
@@ -9,6 +8,7 @@ class MyInt(int):
     """
     MyInt is a custom integer class that inherits from the built-in int class.
     """
+
     def __eq__(self, other):
         """
         Override the == operator to invert its behavior.
