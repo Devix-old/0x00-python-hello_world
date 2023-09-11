@@ -1,0 +1,49 @@
+# This file made to test Mylist Class !
+
+# Let's Import the module 
+>>> MyList = __import__("1-my_list").MyList
+
+#case 1: print a list
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> print(my_list)
+[1, 4, 2, 3]
+
+#case 2: print sorted list
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.print_sorted()
+[1, 2, 3, 4]
+
+#case 3: print empty list
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+#case 4: Pass the list directly as argument
+>>> my_list = MyList([1, 4, 2, 3, 5])
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+#case 5: passing string as argument
+>>> my_list = MyList("Alxafrica")
+>>> print(my_list)
+['A', 'l', 'x', 'a', 'f', 'r', 'i', 'c', 'a']
+
+>>> my_list = MyList("Alxafrica")
+>>> my_list.print_sorted()
+['A', 'a', 'a', 'c', 'f', 'i', 'l', 'r', 'x']
+
+
+
+
