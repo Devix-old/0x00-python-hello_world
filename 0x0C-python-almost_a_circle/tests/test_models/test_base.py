@@ -2,9 +2,11 @@
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
+'''This code to test the base class'''
 
 
 class TestBase(unittest.TestCase):
+    '''Represente TestBase class'''
 
     def test_base_id(self):
         b1 = Base()

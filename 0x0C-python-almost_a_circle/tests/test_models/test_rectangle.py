@@ -1,8 +1,12 @@
+#!/usr/bin/python3
+'''define the module test_rectangle'''
+
 import unittest
 from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
+    '''Represente the class TestRectangle'''
 
     def test_valid_attributes(self):
         # Test instantiation with valid attributes

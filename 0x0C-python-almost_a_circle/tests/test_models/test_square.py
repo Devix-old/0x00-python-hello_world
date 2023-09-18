@@ -1,8 +1,11 @@
+#!/usr/bin/python3
+'''Define Test_square module !'''
 import unittest
 from models.square import Square
 
 
 class TestSquare(unittest.TestCase):
+    '''Represente the class TestSquare !'''
 
     def test_size_getter(self):
         s = Square(5)
