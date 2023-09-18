@@ -2,7 +2,6 @@
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
-from models.square import Square
 
 
 class TestBase(unittest.TestCase):
@@ -28,6 +27,7 @@ class TestBase(unittest.TestCase):
             '[{"id": 2, "_Rectangle__width": 10, "_Rectangle__height": 7, '
             '"_Rectangle__x": 2, "_Rectangle__y": 8}]'
         )
+
 
 if __name__ == "__main__":
     unittest.main()

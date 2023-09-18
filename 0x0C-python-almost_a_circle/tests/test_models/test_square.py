@@ -49,7 +49,7 @@ class TestSquare(unittest.TestCase):
         s1_dictionary = s1.to_dictionary()
         expected_dict = {'id': 4, 'x': 2, 'size': 10, 'y': 1}
         self.assertEqual(s1_dictionary, expected_dict)
-        self.assertTrue(type(s1_dictionary) == dict)
+        self.assertTrue(isinstance(s1_dictionary, dict))
 
 
 if __name__ == "__main__":

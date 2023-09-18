@@ -33,4 +33,5 @@ class Square(Rectangle):
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
 
     def __str__(self):
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
+        return "[Square] ({}) {}/{} - {}".format(
+            self.id, self.x, self.y, self.size)

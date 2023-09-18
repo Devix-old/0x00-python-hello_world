@@ -146,12 +146,13 @@ class TestRectangle(unittest.TestCase):
         r1 = Rectangle(10, 2, 1, 9)
         r1_dictionary = r1.to_dictionary()
         expected_dict = {'_Rectangle__height': 2,
-                        '_Rectangle__width': 10,
-			'_Rectangle__x': 1,
-			'_Rectangle__y': 9,
-			'id': 7}
+                         '_Rectangle__width': 10,
+                         '_Rectangle__x': 1,
+                         '_Rectangle__y': 9,
+                         'id': 7}
         self.assertEqual(r1_dictionary, expected_dict)
-        self.assertTrue(type(r1_dictionary) == dict)
+        self.assertTrue(isinstance(r1_dictionary, dict))
+
 
 if __name__ == "__main__":
     unittest.main()
