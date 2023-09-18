@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 '''define the module test_rectangle'''
-
 import unittest
 from models.rectangle import Rectangle
 
