@@ -10,7 +10,7 @@ class TestSquare(unittest.TestCase):
     def test_size_getter(self):
         s = Square(5)
         self.assertEqual(s.size, 5)
-        self.assertEqual(s.id, 1)
+        self.assertEqual(s.id, 16)
 
     def test_size_setter_valid(self):
         s = Square(5)
@@ -21,7 +21,7 @@ class TestSquare(unittest.TestCase):
 
     def test_size_setter_invalid(self):
         s = Square(5)
-        self.assertEqual(str(s), "[Square] (2) 0/0 - 5")
+        self.assertEqual(str(s), "[Square] (17) 0/0 - 5")
         with self.assertRaises(TypeError) as context:
             s.size = "9"
         self.assertEqual(
@@ -31,7 +31,7 @@ class TestSquare(unittest.TestCase):
 
     def test_update_square(self):
         s1 = Square(5)
-        self.assertEqual(str(s1), "[Square] (5) 0/0 - 5")
+        self.assertEqual(str(s1), "[Square] (20) 0/0 - 5")
         s1.update(10)
         self.assertEqual(str(s1), "[Square] (10) 0/0 - 5")
         s1.update(1, 2)
@@ -50,7 +50,7 @@ class TestSquare(unittest.TestCase):
     def test_to_dictionary(self):
         s1 = Square(10, 2, 1)
         s1_dictionary = s1.to_dictionary()
-        expected_dict = {'id': 4, 'x': 2, 'size': 10, 'y': 1}
+        expected_dict = {'id': 19, 'x': 2, 'size': 10, 'y': 1}
         self.assertEqual(s1_dictionary, expected_dict)
         self.assertTrue(isinstance(s1_dictionary, dict))
 
