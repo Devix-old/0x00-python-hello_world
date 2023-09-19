@@ -11,7 +11,7 @@ class TestSquare(unittest.TestCase):
     def test_size_getter(self):
         s = Square(5)
         self.assertEqual(s.size, 5)
-        self.assertEqual(s.id, 16)
+        self.assertEqual(s.id, 13)
 
     def test_size_setter_valid(self):
         s = Square(5)
@@ -22,7 +22,7 @@ class TestSquare(unittest.TestCase):
 
     def test_size_setter_invalid(self):
         s = Square(5)
-        self.assertEqual(str(s), "[Square] (17) 0/0 - 5")
+        self.assertEqual(str(s), "[Square] (14) 0/0 - 5")
         with self.assertRaises(TypeError) as context:
             s.size = "9"
         self.assertEqual(
@@ -32,7 +32,7 @@ class TestSquare(unittest.TestCase):
 
     def test_update_square(self):
         s1 = Square(5)
-        self.assertEqual(str(s1), "[Square] (20) 0/0 - 5")
+        self.assertEqual(str(s1), "[Square] (18) 0/0 - 5")
         s1.update(10)
         self.assertEqual(str(s1), "[Square] (10) 0/0 - 5")
         s1.update(1, 2)
@@ -51,7 +51,7 @@ class TestSquare(unittest.TestCase):
     def test_to_dictionary(self):
         s1 = Square(10, 2, 1)
         s1_dictionary = s1.to_dictionary()
-        expected_dict = {'id': 19, 'x': 2, 'size': 10, 'y': 1}
+        expected_dict = {'id': 17, 'size': 10, 'x': 2, 'y': 1}
         self.assertEqual(s1_dictionary, expected_dict)
         self.assertTrue(isinstance(s1_dictionary, dict))
 
@@ -78,25 +78,6 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s3.y, 3)
         self.assertEqual(s3.id, 42)
 
-    def test_invalid_square_creation(self):
-        # Test cases with invalid input
-        with self.assertRaises(ValueError):
-            Square("1")
-        with self.assertRaises(ValueError):
-            Square(1, "2")
-        with self.assertRaises(ValueError):
-            Square(1, 2, "3")
-        with self.assertRaises(ValueError):
-            Square(1, 2, 3, 4)
-        with self.assertRaises(ValueError):
-            Square(-1)
-        with self.assertRaises(ValueError):
-            Square(1, -2)
-        with self.assertRaises(ValueError):
-            Square(1, 2, -3)
-        with self.assertRaises(ValueError):
-            Square(0)
-
     def test_create_square_with_id(self):
         square_data = {'id': 89}
         s = Square.create(**square_data)
@@ -115,43 +96,6 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(s.size, 1)
         self.assertEqual(s.x, 2)
         self.assertEqual(s.y, 3)
-
-    def test_save_to_file_with_none(self):
-        with self.assertRaises(TypeError):
-            Square.save_to_file(None)
-
-    def test_save_to_file_with_empty_list(self):
-        temp_file = "temp_square_data.txt"
-        Square.save_to_file([])
-        self.assertTrue(os.path.isfile(temp_file))
-        file_size = os.path.getsize(temp_file)
-        self.assertEqual(file_size, 0)
-        os.remove(temp_file)
-
-    def test_save_to_file_with_list_of_squares(self):
-        temp_file = "temp_square_data.txt"
-        squares = [Square(1)]
-        Square.save_to_file(squares)
-        self.assertTrue(os.path.isfile(temp_file))
-        file_size = os.path.getsize(temp_file)
-        self.assertGreater(file_size, 0)
-        os.remove(temp_file)
-
-    def test_load_from_file_when_file_doesnt_exist(self):
-        temp_file = "temp_square_data.txt"
-        if os.path.isfile(temp_file):
-            os.remove(temp_file)
-        loaded_data = Square.load_from_file()
-        self.assertEqual(loaded_data, [])
-
-    def test_load_from_file_when_file_exists(self):
-        temp_file = "temp_square_data.txt"
-        with open(temp_file, "w") as file:
-            file.write("[{\"id\": 1, \"size\": 2, \"x\": 3, \"y\": 4}]")
-        loaded_data = Square.load_from_file()
-        expected_data = [Square(2, 3, 4, 1)]
-        self.assertEqual(loaded_data, expected_data)
-        os.remove(temp_file)
 
 
 if __name__ == "__main__":

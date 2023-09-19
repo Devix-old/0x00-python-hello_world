@@ -88,9 +88,9 @@ class Base:
         set from the dictionary.
         """
         if cls.__name__ == "Rectangle":
-            instance = cls(0, 0)
+            instance = cls(1, 1)
         else:
-            instance = cls(0)
+            instance = cls(1)
         instance.update(**dictionary)
         return instance
 

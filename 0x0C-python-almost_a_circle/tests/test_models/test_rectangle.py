@@ -120,13 +120,13 @@ class TestRectangle(unittest.TestCase):
         r1 = Rectangle(4, 6, 2, 1, 12)
         r2 = Rectangle(5, 5, 1)
         r1_excpected_ouput = "[Rectangle] (12) 2/1 - 4/6"
-        r2_excpected_ouput = "[Rectangle] (8) 1/0 - 5/5"
+        r2_excpected_ouput = "[Rectangle] (5) 1/0 - 5/5"
         self.assertEqual(str(r1), r1_excpected_ouput)
         self.assertEqual(str(r2), r2_excpected_ouput)
 
     def test_update(self):
         r1 = Rectangle(10, 10, 10, 10)
-        self.assertEqual(str(r1), "[Rectangle] (8) 10/10 - 10/10")
+        self.assertEqual(str(r1), "[Rectangle] (7) 10/10 - 10/10")
 
         r1.update(89)
         self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 10/10")
@@ -176,11 +176,7 @@ class TestRectangle(unittest.TestCase):
     def test_to_dictionary(self):
         r1 = Rectangle(10, 2, 1, 9)
         r1_dictionary = r1.to_dictionary()
-        expected_dict = {'_Rectangle__height': 2,
-                         '_Rectangle__width': 10,
-                         '_Rectangle__x': 1,
-                         '_Rectangle__y': 9,
-                         'id': 9}
+        expected_dict = {'x': 1, 'y': 9, 'id': 6, 'height': 2, 'width': 10}
         self.assertEqual(r1_dictionary, expected_dict)
         self.assertTrue(isinstance(r1_dictionary, dict))
 

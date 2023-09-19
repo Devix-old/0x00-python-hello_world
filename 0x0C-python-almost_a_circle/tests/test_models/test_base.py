@@ -26,8 +26,7 @@ class TestBase(unittest.TestCase):
         json_str = Base.to_json_string([dictionary])
         self.assertEqual(
             json_str,
-            '[{"id": 2, "_Rectangle__width": 10, "_Rectangle__height": 7, '
-            '"_Rectangle__x": 2, "_Rectangle__y": 8}]'
+            '[{"x": 2, "y": 8, "id": 2, "height": 7, "width": 10}]'
         )
 
 
