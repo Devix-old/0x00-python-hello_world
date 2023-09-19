@@ -98,7 +98,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_update(self):
         r1 = Rectangle(10, 10, 10, 10)
-        self.assertEqual(str(r1), "[Rectangle] (10) 10/10 - 10/10")
+        self.assertEqual(str(r1), "[Rectangle] (8) 10/10 - 10/10")
 
         r1.update(89)
         self.assertEqual(str(r1), "[Rectangle] (89) 10/10 - 10/10")
