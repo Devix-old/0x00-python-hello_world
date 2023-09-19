@@ -115,7 +115,7 @@ class TestRectangle(unittest.TestCase):
 
         r1 = Rectangle(2, 2)
         r1.display()
-        
+
     def test_str(self):
         r1 = Rectangle(4, 6, 2, 1, 12)
         r2 = Rectangle(5, 5, 1)

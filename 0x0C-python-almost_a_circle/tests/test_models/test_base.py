@@ -44,7 +44,7 @@ class Testbase_from_json_string(unittest.TestCase):
         list_output = Base.from_json_string('[{ "id": 89 }]')
         expected_output = "[<class 'list'>] [{'id': 98}]"
         self.assertEqual(list_output, expected_output)
-	
+
 
 if __name__ == "__main__":
     unittest.main()
