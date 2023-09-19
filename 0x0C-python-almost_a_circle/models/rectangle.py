@@ -143,7 +143,7 @@ class Rectangle(Base):
             "y": self.y,
             "id": self.id,
             "height": self.height,
-            "witdh": self.width,
+            "width": self.width,
         }
 
     def __str__(self):
