@@ -31,5 +31,20 @@ class TestBase(unittest.TestCase):
         )
 
 
+class Testbase_from_json_string(unittest.TestCase):
+    def from_json_string_none(self):
+        list_output = Base.from_json_string(None)
+        self.assertEqual(list_output, [])
+
+    def from_json_string_empty(self):
+        list_output = Base.from_json_string("[]")
+        self.assertEqual(list_output, [])
+
+    def from_json_string_one_key(self):
+        list_output = Base.from_json_string('[{ "id": 89 }]')
+        expected_output = "[<class 'list'>] [{'id': 98}]"
+        self.assertEqual(list_output, expected_output)
+	
+
 if __name__ == "__main__":
     unittest.main()

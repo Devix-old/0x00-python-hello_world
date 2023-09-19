@@ -34,6 +34,18 @@ class TestRectangle(unittest.TestCase):
             "height must be an integer"
         )
 
+    def test_invalid_x(self):
+        with self.assertRaises(TypeError) as context:
+            r = Rectangle(1, 2, "3")
+            self.assertEqual(str(context.exception),
+                             "x must be an integer")
+
+    def test_invalid_y(self):
+        with self.assertRaises(TypeError) as context:
+            r = Rectangle(1, 2, 3, "4")
+            self.assertEqual(str(context.exception),
+                             "y must be an integer")
+
     def test_width_less_than_zero(self):
         # Test raising ValueError for width less than zero
         with self.assertRaises(ValueError) as context:
@@ -43,10 +55,26 @@ class TestRectangle(unittest.TestCase):
             "width must be > 0"
         )
 
+    def test_width_equal_to_zero(self):
+        with self.assertRaises(ValueError) as context:
+            r = Rectangle(0, 20)
+        self.assertEqual(
+            str(context.exception),
+            "width must be > 0"
+        )
+
     def test_height_less_than_zero(self):
         # Test raising ValueError for height less than zero
         with self.assertRaises(ValueError) as context:
             r = Rectangle(10, -20)
+        self.assertEqual(
+            str(context.exception),
+            "height must be > 0"
+        )
+
+    def test_height_equal_to_zero(self):
+        with self.assertRaises(ValueError) as context:
+            r = Rectangle(10, 0)
         self.assertEqual(
             str(context.exception),
             "height must be > 0"
@@ -87,7 +115,7 @@ class TestRectangle(unittest.TestCase):
 
         r1 = Rectangle(2, 2)
         r1.display()
-
+        
     def test_str(self):
         r1 = Rectangle(4, 6, 2, 1, 12)
         r2 = Rectangle(5, 5, 1)
