@@ -138,7 +138,13 @@ class Rectangle(Base):
         Returns:
             dict: A dictionary containing all Rectangle attributes.
         """
-        return self.__dict__
+        return {
+            "x": self.x,
+            "y": self.y,
+            "id": self.id,
+            "height": self.height,
+            "witdh": self.width,
+        }
 
     def __str__(self):
         """

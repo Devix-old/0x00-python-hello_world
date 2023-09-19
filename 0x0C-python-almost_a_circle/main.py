@@ -1,10 +1,17 @@
 #!/usr/bin/python3
-""" 9-main """
-from models.square import Square
+""" 12-main """
+from models.rectangle import Rectangle
 
 if __name__ == "__main__":
 
-    s1 = Square(5)
-    print(s1)
-    print(s1.area())
-    s1.display()
+    r1 = Rectangle(10, 2, 1, 9)
+    print(r1)
+    r1_dictionary = r1.to_dictionary()
+    print(r1_dictionary)
+    print(type(r1_dictionary))
+
+    r2 = Rectangle(1, 1)
+    print(r2)
+    r2.update(**r1_dictionary)
+    print(r2)
+    print(r1 == r2)
