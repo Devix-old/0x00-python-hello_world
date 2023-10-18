@@ -11,7 +11,7 @@ class TestSquare(unittest.TestCase):
     def test_size_getter(self):
         s = Square(5)
         self.assertEqual(s.size, 5)
-        self.assertEqual(s.id, 13cccccccccccccccccccccccccccccccccccccc)
+        self.assertEqual(s.id, 13)
 
     def test_size_setter_valid(self):
         s = Square(5)
