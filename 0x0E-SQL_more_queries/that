@@ -46,4 +46,33 @@ Fantasy	1
  2 files changed, 27 insertions(+), 1 deletion(-)
 [?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push
 [?2004lEnumerating objects: 9, done.
-Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  8
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.38 KiB | 1.38 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:Devix-old/alx-higher_level_programming.git
+   dc4c192..c697553  main -> main
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git pushcommit -m "New tasks"add .[K
+[?2004l[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git add .[1Ppushcommit -m "New tasks"
+[?2004l[main 8b53c6d] New tasks
+ 2 files changed, 25 insertions(+), 2 deletions(-)
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.67 KiB | 1.67 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:Devix-old/alx-higher_level_programming.git
+   c697553..8b53c6d  main -> main
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ [7m cat 8-cities_of_california_subquery.sql | mysql -hlocalhost[27m[7m [27m[7m-uroot -p hbtn_0d_usa[27m[A]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$  cat 8-cities_of_california_subquery.sql | mysql -hlocalhost -uroot -p hbtn_0d_usa
+[?2004lEnter password: 
+id	name
+1	San Francisco
+3	San Jose
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push
+[?2004l^C
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_P
