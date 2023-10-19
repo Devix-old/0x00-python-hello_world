@@ -23,4 +23,27 @@ Delta compression using up to 8 threads
 Compressing objects:   7% (1/14)Compressing objects:  14% (2/14)Compressing objects:  21% (3/14)Compressing objects:  28% (4/14)Compressing objects:  35% (5/14)Compressing objects:  42% (6/14)Compressing objects:  50% (7/14)Compressing objects:  57% (8/14)Compressing objects:  64% (9/14)Compressing objects:  71% (10/14)Compressing objects:  78% (11/14)Compressing objects:  85% (12/14)Compressing objects:  92% (13/14)Compressing objects: 100% (14/14)Compressing objects: 100% (14/14), done.
 Writing objects:   7% (1/14)Writing objects:  14% (2/14)Writing objects:  21% (3/14)Writing objects:  28% (4/14)Writing objects:  35% (5/14)Writing objects:  42% (6/14)Writing objects:  50% (7/14)Writing objects:  57% (8/14)Writing objects:  64% (9/14)Writing objects:  71% (10/14)Writing objects:  78% (11/14)Writing objects:  85% (12/14)Writing objects:  92% (13/14)Writing objects: 100% (14/14)Writing objects: 100% (14/14), 1.82 KiB | 929.00 KiB/s, done.
 Total 14 (delta 8), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolv
+remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolving deltas:  25% (2/8)[Kremote: Resolving deltas:  37% (3/8)[Kremote: Resolving deltas:  50% (4/8)[Kremote: Resolving deltas:  62% (5/8)[Kremote: Resolving deltas:  75% (6/8)[Kremote: Resolving deltas:  87% (7/8)[Kremote: Resolving deltas: 100% (8/8)[Kremote: Resolving deltas: 100% (8/8), completed with 6 local objects.[K
+To github.com:Devix-old/alx-higher_level_programming.git
+   ed7cf02..dc4c192  main -> main
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$  git pushcommit -m "New tasks"add .[Kcat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows[A]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ [40Psudo mysql -uroot -p
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+[?2004lEnter password: 
+genre	number_of_shows
+Drama	5
+Comedy	4
+Mystery	2
+Crime	2
+Suspense	2
+Thriller	2
+Adventure	1
+Fantasy	1
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git cat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows[A]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "New tasks"add .[K
+[?2004l[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git add .cat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows[A]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "New tasks"
+[?2004l[main c697553] New tasks
+ 2 files changed, 27 insertions(+), 1 deletion(-)
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  8
