@@ -1,0 +1,26 @@
+Script started on 2023-10-19 20:07:16+01:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="156" LINES="40"]
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ [7m script that lists all genres from hbtn_0d_tvshows and displ[27m[7ma[27m[7mys the number of shows linked to each.[27m^C[?2004l[?2004h[?2004l
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ [7mcat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -[27m[7mp[27m[7m hbtn_0d_tvshows[27m[A]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ cat 13-count_shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+[?2004lEnter password: 
+genre	number_of_shows
+Drama	5
+Comedy	4
+Mystery	2
+Crime	2
+Suspense	2
+Thriller	2
+Adventure	1
+Fantasy	1
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git add .
+[?2004l[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git ocmmi[K[K[K[K[Kcommit -m ""N"e"w" "t"a"s"k"s"
+[?2004l[main dc4c192] New tasks
+ 12 files changed, 49 insertions(+), 4 deletions(-)
+ create mode 100644 0x0E-SQL_more_queries/that
+[?2004h]0;devix-old@DESKTOP-8H07KU2: ~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[01;32mdevix-old@DESKTOP-8H07KU2[00m:[01;34m~/Python_Projects/alx-higher_level_programming/0x0E-SQL_more_queries[00m$ git push
+[?2004l 	Enumerating objects: 27, done.
+Counting objects:   4% (1/21)Counting objects:   9% (2/21)Counting objects:  14% (3/21)Counting objects:  19% (4/21)Counting objects:  23% (5/21)Counting objects:  28% (6/21)Counting objects:  33% (7/21)Counting objects:  38% (8/21)Counting objects:  42% (9/21)Counting objects:  47% (10/21)Counting objects:  52% (11/21)Counting objects:  57% (12/21)Counting objects:  61% (13/21)Counting objects:  66% (14/21)Counting objects:  71% (15/21)Counting objects:  76% (16/21)Counting objects:  80% (17/21)Counting objects:  85% (18/21)Counting objects:  90% (19/21)Counting objects:  95% (20/21)Counting objects: 100% (21/21)Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects:   7% (1/14)Compressing objects:  14% (2/14)Compressing objects:  21% (3/14)Compressing objects:  28% (4/14)Compressing objects:  35% (5/14)Compressing objects:  42% (6/14)Compressing objects:  50% (7/14)Compressing objects:  57% (8/14)Compressing objects:  64% (9/14)Compressing objects:  71% (10/14)Compressing objects:  78% (11/14)Compressing objects:  85% (12/14)Compressing objects:  92% (13/14)Compressing objects: 100% (14/14)Compressing objects: 100% (14/14), done.
+Writing objects:   7% (1/14)Writing objects:  14% (2/14)Writing objects:  21% (3/14)Writing objects:  28% (4/14)Writing objects:  35% (5/14)Writing objects:  42% (6/14)Writing objects:  50% (7/14)Writing objects:  57% (8/14)Writing objects:  64% (9/14)Writing objects:  71% (10/14)Writing objects:  78% (11/14)Writing objects:  85% (12/14)Writing objects:  92% (13/14)Writing objects: 100% (14/14)Writing objects: 100% (14/14), 1.82 KiB | 929.00 KiB/s, done.
+Total 14 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolv
