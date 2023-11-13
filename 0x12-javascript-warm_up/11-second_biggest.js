@@ -1,12 +1,11 @@
 #!/usr/bin/node
-const numbers = (process.argv.slice(2)).map(Number);
 
-const max = Math.max(...numbers);
-let secondMax = -Infinity;
+const numbers = process.argv.slice(2).map(Number);
 
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] > secondMax && numbers[i] < max) {
-    secondMax = numbers[i];
-  }
+if (numbers.length <= 1) {
+  console.log(0);
+} else {
+  const max = Math.max(...numbers);
+  const secondMax = Math.max(...numbers.filter(num => num !== max));
+  console.log(secondMax);
 }
-console.log(secondMax);
