@@ -10,10 +10,10 @@ if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
         sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     session = Session(engine)
-    states = session.query(State).order_by(State.id).all()
+    state = session.query(State).order_by(State.id).first()
 
-    if states:
-        print('{}: {}'.format(states[0].id, states[0].name))
+    if state:
+        print('{}: {}'.format(state.id, state.name))
     else:
         print('Nothing')
     session.close()
