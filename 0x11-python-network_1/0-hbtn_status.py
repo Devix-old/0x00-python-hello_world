@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-from urllib import request
+import urllib.request
 url = "https://alx-intranet.hbtn.io/status"
 
-with request.urlopen(url) as response:
+with urllib.request.urlopen(url) as response:
     data = response.read()
     print("Body response:")
-    print("	- type: {}".format(type(data)))
-    print("	- content: {}".format(data))
-    print("	- uft8 content".format(data.decode()))
+    print("\t- type: {}".format(type(data)))
+    print("\t- content: {}".format(data))
+    print("\t- uft8 content".format(data.decode()))
