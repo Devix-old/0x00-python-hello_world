@@ -14,16 +14,15 @@ if __name__ == "__main__":
         letter = ""
 
     payload = {'q': letter}
-
-    try:
-        response = requests.post(
+    response = requests.post(
             "http://0.0.0.0:5000/search_user", data=payload)
+    try:
         json_response = response.json()
 
-        if json_response:
-            print("[{}] {}".format(json_response['id'], json_response['name']))
-        else:
+        if json_response == {}:
             print("No result")
+        else:
+            print("[{}] {}".format(response.get("id"), response.get("name")))
 
     except ValueError:
         print("Not a valid JSON")
