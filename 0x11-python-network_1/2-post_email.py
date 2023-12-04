@@ -1,11 +1,17 @@
-#!/usr/bin/python3
-"""This script fetches https://alx-intranet.hbtn.io/status"""
+import urllib.parse
 import urllib.request
-url = "https://alx-intranet.hbtn.io/status"
+import sys
+"""sends a POST request to the passed URL with the email as a parameter"""
+if __name__ == "__main__":
+    # Extract URL and email from command line arguments
+    url = sys.argv[1]
+    email = sys.argv[2]
 
-with urllib.request.urlopen(url) as response:
-    data = response.read()
-    print("Body response:")
-    print("\t- type: {}".format(type(data)))
-    print("\t- content: {}".format(data))
-    print("\t- utf8 content: {}".format(data.decode('UTF-8')))
+    # Prepare data for the POST request
+    data = {'email': email}
+    encoded_data = urllib.parse.urlencode(data).encode('utf-8')
+
+    # Send the POST request and display the response
+    with urllib.request.urlopen(url, data=encoded_data) as response:
+        response_body = response.read().decode('utf-8')
+        print(response_body)
