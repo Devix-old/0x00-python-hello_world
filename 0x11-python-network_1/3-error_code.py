@@ -1,17 +1,17 @@
-import urllib.parse
+#!/usr/bin/python3
+"""This Python script sends a URL request, displays the body of the
+response (decoded in utf-8), and handles urllib HTTP errors by printing
+the corresponding error code."""
 import urllib.request
+import urllib.error
 import sys
-"""""""
+
 if __name__ == "__main__":
-    # Extract URL and email from command line arguments
     url = sys.argv[1]
-    email = sys.argv[2]
 
-    # Prepare data for the POST request
-    data = {'email': email}
-    encoded_data = urllib.parse.urlencode(data).encode('utf-8')
-
-    # Send the POST request and display the response
-    with urllib.request.urlopen(url, data=encoded_data) as response:
-        response_body = response.read().decode('utf-8')
-        print(response_body)
+    try:
+        with urllib.request.urlopen(url) as response:
+            body = response.read()
+            print(body.decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        print(f"Error code: {e.code}")
