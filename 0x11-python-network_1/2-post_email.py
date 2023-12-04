@@ -1,7 +1,9 @@
+#!/usr/bin/python3
+"""sends a POST request to the passed URL with the email as a parameter"""
 import urllib.parse
 import urllib.request
 import sys
-"""sends a POST request to the passed URL with the email as a parameter"""
+
 if __name__ == "__main__":
     # Extract URL and email from command line arguments
     url = sys.argv[1]
