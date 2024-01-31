@@ -14,11 +14,8 @@ request(url, 'utf-8', (error, response, body) => {
   }
   const dict = {};
   for (const task of JSON.parse(body)) {
-    dict[task.userId] = 0;
-  }
-  for (const task of JSON.parse(body)) {
     if (task.completed) {
-      dict[task.userId]++;
+      dict[task.userId] = (dict[task.userId] || 0) + 1;
     }
   }
   console.log(dict);
