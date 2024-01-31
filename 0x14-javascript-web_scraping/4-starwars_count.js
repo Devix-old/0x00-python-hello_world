@@ -1,20 +1,29 @@
 #!/usr/bin/node
 
 const request = require('request');
+const url = 'https://swapi-api.alx-tools.com/api/films/';
 
-const apiUrl = process.argv[2];
-const characterId = 18;
-
-request(apiUrl, (error, response, body) => {
+request(url, 'utf-8', (error, response, body) => {
   if (error) {
-    console.error(error.message);
-  } else if (response.statusCode === 200) {
-    const filmsData = JSON.parse(body).results;
-    const wedgeMovies = filmsData.filter(film =>
-      film.characters.some(character => character.endsWith(`/${characterId}`))
-    );
-    console.log(wedgeMovies.length);
-  } else {
-    console.error(`Error: Unexpected status code - ${response.statusCode}`);
+    console.error('Error:', error);
+    return;
   }
+
+  if (response.statusCode !== 200) {
+    console.error('Invalid response:', response.statusCode);
+    return;
+  }
+
+  let i = 0;
+  body = JSON.parse(body);
+
+  for (const film of body.results) {
+    for (const character of film.characters) {
+      if (character.includes('18')) {
+        i++;
+      }
+    }
+  }
+
+  console.log(i);
 });
