@@ -5,7 +5,7 @@ $.ajax({
 	success: function(data) {
 		for (let film of data['results'])
 		{
-			$('UL#list_movies').append(`<li>${film['title']}</li>`)
+			$('UL#list_movies').append(`<li>${film['title']}</li>`);
 		}
 	}
 });
